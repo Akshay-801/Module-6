@@ -26,7 +26,25 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 ---
 
 ## 💻 Program
-
+```
+class Beans(): 
+     def type(self): 
+       print("Vegetable") 
+     def color(self):
+       print("Green") 
+class Mango(): 
+     def type(self): 
+       print("Fruit") 
+     def color(self): 
+       print("Yellow")
+obj_beans = Beans() 
+obj_mango = Mango()
+for func in (obj_beans,obj_mango): 
+    func.type()
+    func.color()
+```
 ## Output
+![p10](https://github.com/user-attachments/assets/9c8baaab-4309-4356-9ffe-6f7c871e6d6a)
 
 ## Result
+The program was executed successfully. It correctly demonstrates polymorphism by defining two classes, Beans and Mango, each with methods to return their type (Fruit or Vegetable) and color. A generic function is used to accept any object and call the appropriate methods based on the object’s class.
